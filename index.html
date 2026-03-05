@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accueil — Portfolio de Raphaël Maillet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-dark nav-mobile sticky-top" style="background:var(--bg);border-bottom:1px solid rgba(255,255,255,.08);">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html" style="color:var(--accent);"><span data-i18n="hero.title">Portfolio</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobileMenuLabel" style="color:var(--accent);">Menu</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+          <div class="d-flex gap-2 mb-3">
+            <button class="btn btn-outline-light w-50" id="themeToggleMobile" type="button">
+              <span data-role="theme-label" data-i18n="ui.themeDark">Thème : Sombre</span>
+            </button>
+            <div class="dropdown w-50">
+              <button class="btn btn-outline-light dropdown-toggle w-100" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span data-i18n="ui.lang">Langue</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark w-100">
+                <li><button class="dropdown-item js-set-lang" data-lang="fr">Français</button></li>
+                <li><button class="dropdown-item js-set-lang" data-lang="en">English</button></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <div class="small text-uppercase mb-2" style="color:rgba(188,175,154,.8);"><span data-i18n="nav.productions">Productions</span></div>
+            <div class="list-group list-group-flush">
+              <a class="list-group-item list-group-item-action bg-transparent text-light" href="photos.html"><span data-i18n="nav.photos">Photographies</span></a>
+              <a class="list-group-item list-group-item-action bg-transparent text-light" href="videos.html"><span data-i18n="nav.videos">Vidéos</span></a>
+              <a class="list-group-item list-group-item-action bg-transparent text-light" href="graphic-design.html"><span data-i18n="nav.graphics">Productions graphiques</span></a>
+              <a class="list-group-item list-group-item-action bg-transparent text-light" href="gestion-projet.html"><span data-i18n="nav.communication">Gestion de projet</span></a>
+              <a class="list-group-item list-group-item-action bg-transparent text-light" href="sites.html"><span data-i18n="nav.websites">Sites web</span></a>
+              <a class="list-group-item list-group-item-action bg-transparent text-light" href="index.html#competences"><span data-i18n="sec.skills">Compétences</span></a>
+            </div>
+          </div>
+
+          <div>
+            <div class="small text-uppercase mb-2" style="color:rgba(188,175,154,.8);"><span data-i18n="nav.contact">Contact</span></div>
+            <a class="btn btn-outline-light w-100 mb-2" href="cv.html"><span data-i18n="nav.cv">CV</span></a>
+            <a class="btn btn-outline-light w-100 mb-2" href="contact.html"><span data-i18n="ui.contactMe">Me contacter</span></a>
+            <a class="btn btn-outline-light w-100" href="about.html"><span data-i18n="nav.about">À propos</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark nav-desktop sticky-top" style="background:var(--bg);border-bottom:1px solid rgba(255,255,255,.08);">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html" style="color:var(--accent);"><span data-i18n="hero.title">Portfolio</span></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#desktopNav"
+              aria-controls="desktopNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="desktopNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span data-i18n="nav.productions">Productions</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+              <li><a class="dropdown-item" href="photos.html"><span data-i18n="nav.photos">Photographies</span></a></li>
+              <li><a class="dropdown-item" href="videos.html"><span data-i18n="nav.videos">Vidéos</span></a></li>
+              <li><a class="dropdown-item" href="graphic-design.html"><span data-i18n="nav.graphics">Productions graphiques</span></a></li>
+              <li><a class="dropdown-item" href="gestion-projet.html"><span data-i18n="nav.communication">Gestion de projet</span></a></li>
+              <li><a class="dropdown-item" href="sites.html"><span data-i18n="nav.websites">Sites web</span></a></li>
+              <li><a class="dropdown-item" href="index.html#competences"><span data-i18n="sec.skills">Compétences</span></a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="cv.html"><span data-i18n="nav.cv">CV</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><span data-i18n="nav.contact">Contact</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><span data-i18n="nav.about">À propos</span></a></li>
+
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-sm" href="index.html#productions" style="background:rgba(188,175,154,.18);border:1px solid rgba(188,175,154,.45);color:var(--accent);">
+              <span data-i18n="ui.seeProductions">Voir mes productions</span>
+            </a>
+          </li>
+
+          <li class="nav-item ms-lg-2 d-flex align-items-center gap-2">
+            <button class="btn btn-sm btn-outline-light" id="themeToggle" type="button">
+              <span data-role="theme-label" data-i18n="ui.themeDark">Thème : Sombre</span>
+            </button>
+            <div class="dropdown">
+              <button class="btn btn-sm btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span data-i18n="ui.lang">Langue</span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                <li><button class="dropdown-item js-set-lang" data-lang="fr">Français</button></li>
+                <li><button class="dropdown-item js-set-lang" data-lang="en">English</button></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+
+
+<section class="section hero pt-5 pt-lg-6">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-6">
+        <div class="hero-card p-4 p-lg-5">
+          <h1 class="display-5 fw-semibold mb-3"><span data-i18n="hero.title"><img class="img-fluid hero-img" src="assets/img/logo.svg" alt="Mon Logo" title="Mon Logo">Portfolio de Raphaël Maillet</span></h1>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-outline-light" href="#productions"><span data-i18n="ui.discover">Découvrir</span></a>
+            <a class="btn" href="contact.html" style="background:var(--accent);color:#000;"><span data-i18n="ui.contactMe">Me contacter</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex align-items-center">
+  <div class="hero-photo-wrapper w-100">
+    <img class="img-fluid hero-photo" src="assets/img/PhotoProfil3.png" alt="Ma photo" title="Ma photo">
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="productions" class="section">
+  <div class="container">
+    <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
+      <div>
+        <h2 class="section-title mb-1"><span data-i18n="home.productionsTitle">Mes productions</span></h2>
+        <p class="mb-0"><span data-i18n="home.productionsSubtitle">...</span></p>
+      </div>
+    </div>
+
+    <div class="row g-3 mt-3">
+      <div class="col-12 col-md-6 col-lg-4"><a class="prod-tile d-block" href="photos.html">
+        <img src="assets/img/monChat_edited.jpg" alt="Photography"><div class="overlay"></div>
+        <div class="label"><div class="d-flex justify-content-between align-items-center">
+          <div class="fw-semibold text-white"><span data-i18n="nav.photos">Photographies</span></div>
+          <span class="badge badge-accent"><span data-i18n="ui.view">Voir</span></span>
+        </div></div></a></div>
+
+      <div class="col-12 col-md-6 col-lg-4"><a class="prod-tile d-block" href="videos.html">
+        <img src="assets/img/photoVideo.png" alt="Videos"><div class="overlay"></div>
+        <div class="label"><div class="d-flex justify-content-between align-items-center">
+          <div class="fw-semibold text-white"><span data-i18n="nav.videos">Vidéos</span></div>
+          <span class="badge badge-accent"><span data-i18n="ui.view">Voir</span></span>
+        </div></div></a></div>
+
+      <div class="col-12 col-md-6 col-lg-4"><a class="prod-tile d-block" href="graphic-design.html">
+        <img src="assets/img/AffichePublicitaire.png" alt="Affiche publicitaire"><div class="overlay"></div>
+        <div class="label"><div class="d-flex justify-content-between align-items-center">
+          <div class="fw-semibold text-white"><span data-i18n="nav.graphics">Productions graphiques</span></div>
+          <span class="badge badge-accent"><span data-i18n="ui.view">Voir</span></span>
+        </div></div></a></div>
+
+      <div class="col-12 col-md-6 col-lg-4"><a class="prod-tile d-block" href="gestion-projet.html">
+        <img src="assets/img/TableauRepartitionTaches.jpg" alt="Tableau de repartition des tâches"><div class="overlay"></div>
+        <div class="label"><div class="d-flex justify-content-between align-items-center">
+          <div class="fw-semibold text-white"><span data-i18n="nav.communication">Gestion de projet</span></div>
+          <span class="badge badge-accent"><span data-i18n="ui.view">Voir</span></span>
+        </div></div></a></div>
+
+      <div class="col-12 col-md-6 col-lg-4"><a class="prod-tile d-block" href="sites.html">
+        <img src="assets/img/siteWebJura.png" alt="Websites"><div class="overlay"></div>
+        <div class="label"><div class="d-flex justify-content-between align-items-center">
+          <div class="fw-semibold text-white"><span data-i18n="nav.websites">Sites web</span></div>
+          <span class="badge badge-accent"><span data-i18n="ui.links">Liens</span></span>
+        </div></div></a></div>
+
+      <div class="col-12 col-md-6 col-lg-4"><a class="prod-tile d-block" href="cv.html">
+        <img src="assets/img/CVStage2026.png" alt="CV"><div class="overlay"></div>
+        <div class="label"><div class="d-flex justify-content-between align-items-center">
+          <div class="fw-semibold text-white"><span data-i18n="nav.cv">CV</span></div>
+          <span class="badge badge-accent"><span data-i18n="ui.view">Voir</span></span>
+        </div></div></a></div>
+    </div>
+  </div>
+</section>
+
+<section id="competences" class="section pt-0">
+  <div class="container">
+    <div class="skills-box">
+      <div class="d-flex align-items-end justify-content-between flex-wrap gap-2">
+        <div>
+          <h2 class="section-title mb-1"><span data-i18n="sec.skills">Compétences</span></h2>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-lg-6">
+            <h3 class="h5 mb-2"><span data-i18n="skills.langs">Langages de programmation</span></h3>
+            <div class="mb-3">
+              <div class="small text-uppercase mb-2" style="color:var(--accent);opacity:.85;">
+                <span data-i18n="skills.cat.languages">Langages</span>
+              </div>
+              <div>
+                <span class="skill-pill">HTML</span>
+                <span class="skill-pill">CSS</span>
+                <span class="skill-pill">JavaScript</span>
+                <span class="skill-pill">PHP</span>
+                <span class="skill-pill">SQL</span>
+                <span class="skill-pill">Python</span>
+              </div>
+            </div>
+            <div>
+              <div class="small text-uppercase mb-2" style="color:var(--accent);opacity:.85;">
+                <span data-i18n="skills.cat.frameworks">Frameworks & bibliothèques</span>
+              </div>
+              <div>
+                <span class="skill-pill">Bootstrap</span>
+                <span class="skill-pill">jQuery</span>
+              </div>
+            </div>
+          </div>
+
+        <div class="col-lg-6">
+          <h3 class="h5 mb-2"><span data-i18n="skills.software">Logiciels</span></h3>
+          <div>
+            <span class="skill-pill">Photoshop</span><span class="skill-pill">Illustrator</span><span class="skill-pill">Premiere Pro</span>
+            <span class="skill-pill">After Effects</span><span class="skill-pill">Figma</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer class="py-4">
+    <div class="container d-flex justify-content-between flex-wrap gap-2">
+      <small data-i18n="footer.copy" data-i18n-format="year">©Raphaêl Maillet — 2026 — Mon Portfolio</small>
+      <small><a href="#top"><span data-i18n="ui.backToTop">Retour en haut</span></a></small>
+    </div>
+  </footer>
+
+<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div>
+            <h5 class="modal-title" id="projectModalLabel">Project</h5>
+            <div class="small" id="projectModalTag" style="color:rgba(188,175,154,.8);"></div>
+          </div>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="projectModalBody">
+          <p class="mb-0">Description à compléter.</p>
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-outline-light d-none" id="projectModalCta" href="#" target="_blank" rel="noopener">Link</a>
+          <button type="button" class="btn" style="background:var(--accent);color:#000;" data-bs-dismiss="modal">
+            <span data-i18n="ui.ok">OK</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="webdevLinksModal" tabindex="-1" aria-labelledby="webdevLinksLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="webdevLinksLabel">Les sites</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="mb-3">Liens vers les sites web</p>
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action bg-dark text-light border-0" href="https://maillrap.tpweb.univ-rouen.fr/sitewebFoodTruck/" target="_blank" rel="noopener">Food-truck — https://maillrap.tpweb.univ-rouen.fr/portfolio4/index.html</a>
+            <a class="list-group-item list-group-item-action bg-dark text-light border-0" href="https://maillrap.tpweb.univ-rouen.fr/dashboard_jura/" target="_blank" rel="noopener">Dashboard météo Jura — https://maillrap.tpweb.univ-rouen.fr/dashboard_jura/</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" style="background:var(--accent);color:#000;" data-bs-dismiss="modal">
+            <span data-i18n="ui.close">Fermer</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
